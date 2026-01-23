@@ -18,7 +18,7 @@ func main() {
 		}
 
 		fmt.Print("Réessaie : ")
-		fmt.Scan(&tentative)f
+		fmt.Scan(&tentative)
 	}
 
 	fmt.Println("Bravo ! Tu as trouvé le nombre secret.")

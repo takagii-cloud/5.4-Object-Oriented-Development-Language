@@ -28,7 +28,7 @@ func main() {
 		"Aiguefonde":              2510,
 	}
 
-	// Map région -> liste de communes (inchangé)
+	// Map région -> liste de communes
 	regions := map[string][]string{
 		"Auvergne-Rhône-Alpes": {"L'Abergement-Clémenciat", "Affoux", "Aigueperse"},
 		"Occitanie":            {"Les Aires", "Alès", "Aguts", "Aiguefonde"},
