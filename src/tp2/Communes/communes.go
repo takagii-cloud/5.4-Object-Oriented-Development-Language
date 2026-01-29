@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func readLine() string {
+func readLine() string { // Stack Overflow
 	in := bufio.NewReader(os.Stdin)
 	line, _ := in.ReadString('\n')
 	line = line[:len(line)-1] // enlève le '\n'
@@ -28,11 +28,13 @@ func main() {
 	}
 
 	fmt.Print("Commune : ")
-	nom := readLine() // <-- on lit toute la ligne
+	nom := readLine() // On lit toute la ligne
 
-	if pop, ok := communes[nom]; ok {
+	pop := communes[nom]
+	if pop != 0 {
 		fmt.Println(pop)
 	} else {
 		fmt.Println("Commune inconnue")
 	}
+
 }
